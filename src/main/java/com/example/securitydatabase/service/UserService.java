@@ -40,4 +40,8 @@ public class UserService {
                 role
         )));
     }
+
+    public User findUserByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
 }
